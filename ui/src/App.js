@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-const apiHost = process.env.REACT_APP_API_HOST
+const apiHost = process.env.API_HOST
 export default function App() {
  const [now, setNow] = useState()
  async function onClick() {
