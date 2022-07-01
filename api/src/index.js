@@ -5,11 +5,15 @@ const port = process.env.PORT
 const app = express()
 app.use(cors())
 const pool = new Pool()
+// Routes
 app.get('/now', async (req, res) => {
+    console.log("request received")
  try {
   const { rows } = await pool.query('SELECT NOW()')
   res.status(200).send(rows[0].now)
- } catch (err) {
+
+ } 
+ catch (err) {
   console.log(err)
  }
 })
