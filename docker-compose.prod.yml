@@ -35,7 +35,7 @@ services:
    dockerfile: Dockerfile.prod
   environment:
    - NODE_ENV
-   - API_HOST
+   - REACT_APP_API_HOST
   volumes:
    - ./ui/build:/app/build
    - /app/node_modules
