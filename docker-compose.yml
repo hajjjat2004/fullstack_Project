@@ -34,7 +34,7 @@ ui:
   environment:
    - NODE_ENV=$UI_NODE_ENV
    - PORT=$UI_PORT
-   - REACT_APP_API_HOST
+   - API_HOST
   ports:
    - $UI_PORT:$UI_PORT
   volumes:

@@ -18,5 +18,5 @@ app.get('/now', async (req, res) => {
  }
 })
 app.listen(port, () => {
- console.log(`api listening at http://0.0.0.0:${port}`)
+ console.log(`api listening at http://192.168.32.134:${port}`)
 })
