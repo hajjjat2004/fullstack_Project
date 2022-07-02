@@ -29,7 +29,7 @@ services:
    - ./api:/app
    - /app/node_modules
 
-ui:
+ ui:
   build: ./ui
   environment:
    - NODE_ENV=$UI_NODE_ENV
